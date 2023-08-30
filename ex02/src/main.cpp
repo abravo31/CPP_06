@@ -62,17 +62,17 @@ void    identify(Base& p){
 int main (){
     std::srand(static_cast<unsigned int>(std::time(NULL)));
 
-    Base* obj1 = generate();
-    Base* obj2 = generate();
-    Base* obj3 = generate();
+    Base *obj1 = generate();
+    // Base obj2 = generate();
+    // Base obj3 = generate();
 
     identify(obj1);
-    identify(*obj2);
-    identify(obj3);
+    identify(*obj1);
+    // identify(obj3);
 
     delete obj1;
-    delete obj2;
-    delete obj3;
+    // delete obj2;
+    // delete obj3;
 
     return 0;
 }
