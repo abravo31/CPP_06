@@ -41,7 +41,7 @@ void    ScalarConverter::putChar( long double input ){
 	else if (ScalarConverter::c <= 32 || ScalarConverter::c == 127)
 		std::cout << "char: Non displayable\n";
 	else
-		std::cout << "char: " << ScalarConverter::c << std::endl;
+		std::cout << "char: \'" << ScalarConverter::c << "\'" << std::endl;
 }
 
 void    ScalarConverter::putInt( long double input ){
