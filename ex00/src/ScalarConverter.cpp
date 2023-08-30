@@ -99,7 +99,7 @@ void    ScalarConverter::toChar( std::string input ){
 void    ScalarConverter::toInt( std::string input ){
     
     long double convert;
-    convert = std::atoi(input.c_str());
+    convert = std::atof(input.c_str());
     if (convert > std::numeric_limits<int>::max() || convert < std::numeric_limits<int>::min())
         throw std::overflow_error("Integer Overflow!");
     ScalarConverter::displayResults( convert );
